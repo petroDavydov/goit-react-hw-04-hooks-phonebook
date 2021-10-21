@@ -1,0 +1,16 @@
+/* .list {
+} */
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonDelete {
+  width: 120px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
