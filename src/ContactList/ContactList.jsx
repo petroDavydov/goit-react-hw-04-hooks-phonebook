@@ -7,7 +7,7 @@ export default function ContactList({ contacts, onDeleteContact }) {
     <ul className={s.list}>
       {contacts.map(({ name, number, id }) => (
         <li className={s.item} key={id}>
-          <Contact name={name} number={number} />
+			  <Contact name={name} number={number} />
 
           <button
             className={s.buttonDelete}
@@ -25,7 +25,7 @@ export default function ContactList({ contacts, onDeleteContact }) {
 ContactList.propTypes = {
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
+      id: PropTypes.string,
     }),
   ),
   onDeleteContact: PropTypes.func,

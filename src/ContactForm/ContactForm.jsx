@@ -25,7 +25,7 @@ function ContactForm({ onSubmit }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const contact = {
-      id: uuidv4,
+      id: uuidv4(),
       name,
       number,
     };
