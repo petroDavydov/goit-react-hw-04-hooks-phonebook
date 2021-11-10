@@ -5,14 +5,14 @@ import Contact from '../Contact/Contact';
 export default function ContactList({ contacts, onDeleteContact }) {
   return (
     <ul className={s.list}>
-      {contacts.map(({ name, number, id }) => (
-        <li className={s.item} key={id}>
+      {contacts.map(({ name, number, id:string }) => (
+        <li className={s.item} key={string}>
 			  <Contact name={name} number={number} />
 
           <button
             className={s.buttonDelete}
             type="button"
-            onClick={() => onDeleteContact(id)}
+            onClick={() => onDeleteContact(string)}
           >
             Delete
           </button>
